@@ -3,59 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV de Killian Mahut</title>
+    <title>CV Informatique</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <div class="photo"></div>
-            <h1>Killian Mahut</h1>
-            <p>Étudiant à La Manu</p>
-
+    <div class="cv-container">
+        <!-- Barre latérale -->
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="profile-pic"><img src="" alt=""></div>
+                <h1>Killian Mahut</h1>
+                <h2>Étudiant à La Manu</h2>
+            </div>
             <div class="contact">
+                <h3 >Contact</h3>
                 <p>📞 +33 7 82 54 29 22</p>
                 <p>📧 killian.mahut@sfr.fr</p>
                 <p>📍 13 rue du tilleul, Candor</p>
             </div>
-
-            <div class="section">
-                <h2>Langues</h2>
-                <p>Français</p>
-                <p>Anglais (B1)</p>
-                <p>Espagnol (A2)</p>
+            <div class="languages">
+                <h3>Langues</h3>
+                <ul>
+                    <li>Français</li>
+                    <li>Anglais (B1)</li>
+                    <li>Espagnol (A2)</li>
+                </ul>
             </div>
-
-            <div class="section">
-                <h2>Loisirs</h2>
-                <p>Automobile</p>
-                <p>Sport</p>
-                <p>Jeux-Vidéo</p>
-                <p>Dessin</p>
+            <div class="hobbies">
+                <h3>Loisirs</h3>
+                <ul>
+                    <li>Automobile</li>
+                    <li>Sport</li>
+                    <li>Jeux-Vidéo</li>
+                    <li>Dessin</li>
+                    <li>Musique</li>
+                </ul>
             </div>
-        </div>
+            <div class="reseaux">
+                <h3>Réseaux</h3>
+                <ul>
+                    <li>insta</li>
+                </ul>
+            </div>
+        </aside>
 
         <!-- Contenu principal -->
-        <div class="main-content">
-            <div class="section">
-                <h2>Expériences</h2>
-                <p>Stage informatique (exemple)</p>
-            </div>
-
-            <div class="section">
-                <h2>Formations</h2>
-                <p>Baccalauréat Général</p>
-            </div>
-
-            <div class="section">
-                <h2>Compétences</h2>
-                <div class="skills">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
+        <main class="main-content">
+            <section>
+                <h3>Expériences</h3>
+                <div class="experience">
+                    <h4>Stage en informatique</h4>
+                    <p><strong>Entreprise :</strong> Tech Solutions</p>
+                    <p><strong>Dates :</strong> Juin 2023 - Août 2023</p>
+                    <p><strong>Tâches :</strong> Développement de pages web avec HTML/CSS, gestion de bases de données, support technique aux utilisateurs.</p>
                 </div>
-            </div>
-        </div>
+                <div class="experience">
+                    <h4>Assistant technique</h4>
+                    <p><strong>Entreprise :</strong> Informatique et Réseaux</p>
+                    <p><strong>Dates :</strong> Septembre 2022 - Décembre 2022</p>
+                    <p><strong>Tâches :</strong> Installation de logiciels, configuration de réseaux locaux, maintenance de postes de travail.</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Formations</h3>
+                <div class="education">
+                    <h4>Baccalauréat Général</h4>
+                    <p><strong>Établissement :</strong> Lycée Jean Calvin</p>
+                    <p><strong>Année d'obtention :</strong> 2024</p>
+                </div>
+                <div class="education">
+                    <h4>Formation Développeur Web</h4>
+                    <p><strong>Établissement :</strong> La Manu</p>
+                    <p><strong>Dates :</strong> 2024 - 2025</p>
+                    <p><strong>Compétences acquises :</strong> Développement web avec HTML, CSS, et JavaScript, gestion de projets web, UX/UI design.</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Compétences</h3>
+                <div class="skills">
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">SQL</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">Git</div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Projets</h3>
+                <div class="project">
+                    <h4>Site vitrine pour une entreprise locale</h4>
+                    <p><strong>Description :</strong> Création d’un site web responsive pour une entreprise de jardinage. Utilisation d’HTML, CSS et JavaScript.</p>
+                    <p><strong>Année :</strong> 2023</p>
+                </div>
+                <div class="project">
+                    <h4>Application de gestion de tâches</h4>
+                    <p><strong>Description :</strong> Développement d’une application web avec Python et SQL pour gérer les tâches d’une équipe.</p>
+                    <p><strong>Année :</strong> 2022</p>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>
