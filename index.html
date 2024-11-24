@@ -9,36 +9,56 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <ul>
+        <!-- Icône Burger -->
+        <div class="burger">
+            <input type="checkbox" id="burger">
+            <label for="burger" class="burger-icon">
+                <img src="assets/img/nav_burger.png" alt="Menu">
+            </label>
+        </div>
+        <!-- Menu principal -->
+        <ul class="links">
             <li><a href="#competences">Compétences</a></li>
             <li><a href="#experiences">Expériences</a></li>
             <li><a href="#formations">Formations</a></li>
         </ul>
     </nav>
-
-    <div class="cv-layout">
+    
+    <div class="cv">
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="profile">
                 <div class="profile-pic">
-                    <img src="" alt="Photo de profil">
+                    <img src="assets/img/profile.png" alt="Photo de profil">
                 </div>
                 <h1>Killian Mahut</h1>
                 <h2>Étudiant à La Manu</h2>
-                <p>📍 13 rue du tilleul, Candor</p>
+                <br>
+                <h3>Description</h3>
                 <p>
-                    📧 <a href="mailto:killian.mahut@sfr.fr">killian.mahut@sfr.fr</a><br>
-                    📞 <a href="tel:+33782542922">+33 7 82 54 29 22</a>
+                    Je suis étudiant en première année de Bachelor. <br>
+                    Je suis curieux, sportif et j'aime apprendre de nouvelles choses. <br>
+                    Je suis a la recherche d'un stage pour m'aider a trouver ma voie.
+                    <br>
+                    Je suis en possession du permis de conduire. 
+                </p>
+                <br>
+                <p>
+                    <img src="assets/img/picto_mail.png" alt="picto_mail"> <a href="mailto:killian.mahut@sfr.fr">killian.mahut@sfr.fr</a><br>
+                    <img src="assets/img/picto_tel.png" alt="picto_tel"> <a href="tel:+33782542922">+33 7 82 54 29 22</a><br>
+                    <img src="assets/img/home.png" alt="picto_home"> 13 rue du tilleul, Candor
                 </p>
             </div>
+            <br>
             <div class="languages">
                 <h3>Langues</h3>
                 <ul>
-                    <li>Français</li>
+                    <li>Français (langue courante)</li>
                     <li>Anglais (B1)</li>
                     <li>Espagnol (A2)</li>
                 </ul>
             </div>
+            <br>
             <div class="hobbies">
                 <h3>Loisirs</h3>
                 <ul>
@@ -61,7 +81,7 @@
                     <span class="skill">JavaScript</span>
                     <span class="skill">Python</span>
                     <span class="skill">Git</span>
-                    <span class="skill">Design</span>
+                    <span class="skill">Design UX/UI</span>
                 </div>
             </section>
 
@@ -69,24 +89,38 @@
                 <h2>Expériences</h2>
                 <div class="experience">
                     <h3>Puissance 4</h3>
-                    <p><strong>Dates :</strong> 2023</p>
+                    
                     <p><strong>Tâches :</strong> Réalisation d'un puissance 4 en Python.</p>
-                    <p><strong>Description :</strong> Travail de groupe avec ajout d'une interface graphique pour une meilleure expérience utilisateur.</p>
+                    <p><strong>Description :</strong> J'ai fait ce projet en groupe et nous devions créer un puissance 4 qui est un jeu de société où il faut aligner quatre jetons de la même couleur dans une grille de sept case par six.
+                        Nous devions le créer en Python avec une partie graphique</p>
+                    <p><strong>Dates :</strong> 2023</p>
+                </div>
+                <div class="experience">
+                    <h3>Travail</h3>
+                    <p><strong>Tâches :</strong> Aide rémunérée</p>
+                    <p>Je travaille chez ma voisine pour l'aider à entretenir son terrain, je fait donc des petits travails comme tondre, tailler, réparations et d'autres choses pour aider un maximum.</p>
+                    <p><strong>Dates :</strong> Depuis 2023</p>
                 </div>
             </section>
 
             <section id="formations">
                 <h2>Formations</h2>
+                
+                <div class="education">
+                    <h3>Formation Développeur Web</h3>
+                    <p><strong>Établissement :</strong> La Manu</p>
+                    <p><strong>Dates :</strong> 2024 - 2025</p>
+                    <p><strong>Compétences acquises :</strong> HTML, CSS, JavaScript, UX/UI design, algorithmie.</p>
+                </div>
                 <div class="education">
                     <h3>Baccalauréat Général</h3>
                     <p><strong>Établissement :</strong> Lycée Jean Calvin</p>
                     <p><strong>Année d'obtention :</strong> 2024</p>
                 </div>
                 <div class="education">
-                    <h3>Formation Développeur Web</h3>
-                    <p><strong>Établissement :</strong> La Manu</p>
-                    <p><strong>Dates :</strong> 2024 - 2025</p>
-                    <p><strong>Compétences acquises :</strong> HTML, CSS, JavaScript, UX/UI design, algorithmie.</p>
+                    <h3>Brevet des collèges</h3>
+                    <p><strong>Établissement :</strong> Collège Abel Lefranc</p>
+                    <p><strong>Année d'obtention :</strong> 2021</p>
                 </div>
             </section>
         </main>
