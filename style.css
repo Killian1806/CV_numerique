@@ -7,7 +7,6 @@
 /* Styles de base */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -22,7 +21,6 @@ body {
     width: 100%;
     background-color: #006d77; /* Couleur de fond */
     color: white;
-    z-index: 10; /* Priorité d'affichage */
     display: flex; /* Layout mobile */
     justify-content: space-between; /* Espace entre icône burger et titre */
     align-items: center; /* Centrage vertical */
@@ -43,12 +41,10 @@ img {
 }
 
 .navbar ul {
-    list-style: none; /* Supprime les puces */
     margin: 0;
     padding: 0;
     display: none; /* Masque le menu sur mobile */
     flex-direction: column; /* Menu vertical */
-    position: absolute;
     top: 60px; /* En dessous de la barre */
     left: 0;
     width: 100%; /* Prend toute la largeur */
@@ -69,7 +65,7 @@ img {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px; /* Espacement interne */
-    transition: background-color 0.3s; /* Animation fluide */
+    
 }
 
 .navbar a:hover {
@@ -155,7 +151,7 @@ img {
     color: white;
     padding: 50px 30px; /* Ajout d'espace en haut */
     text-align: center;
-    flex-shrink: 0;
+    
 }
 
 .sidebar .profile-pic img {
