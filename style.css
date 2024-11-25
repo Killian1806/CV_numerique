@@ -1,31 +1,22 @@
+*{
+    margin: 0;
+}
+
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #006d77;
+    color: #333;
+}
+
 /* Main Content */
 .cv {
     display: flex;
     flex-direction: column;
     padding-top: 60px;
-}
-/* Styles de base */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* Barre de navigation */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #006d77; /* Couleur de fond */
-    color: white;
-    display: flex; /* Layout mobile */
-    justify-content: space-between; /* Espace entre icône burger et titre */
-    align-items: center; /* Centrage vertical */
-    padding: 10px 20px; /* Espacement intérieur */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre subtile */
 }
 
 .profile p img {
@@ -34,116 +25,101 @@ body {
     margin-right: 5px; /* Ajoute un espace entre l'icône et le texte */
 }
 
-img {
-    /* Conserve les proportions */
-    max-width: 100%; 
-    height: auto; 
-}
-
-.navbar ul {
-    margin: 0;
-    padding: 0;
-    display: none; /* Masque le menu sur mobile */
-    flex-direction: column; /* Menu vertical */
-    top: 60px; /* En dessous de la barre */
-    left: 0;
-    width: 100%; /* Prend toute la largeur */
-    background-color: #006d77; /* Même couleur que la barre */
-    padding: 10px 0;
-}
-
-.navbar ul li {
-    text-align: center; /* Centre les liens */
-}
-
-.navbar li {
-    margin: 0 15px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px; /* Espacement interne */
-    
-}
-
-.navbar a:hover {
-    background-color: #004c56; /* Changement de couleur au survol */
-    border-radius: 5px; /* Arrondi des coins */
-}
-
-
 .links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #006d77;
-    padding: 10px 0;
     display: none;
 }
 
-.links li {
-    margin: 15px 0;
-}
-
 .links a {
-    color: white;
-    font-weight: bold;
-    font-size: 1.1em;
+    text-decoration: none;
 }
 
-.burger-icon {
-    display: flex; /* Affiche le burger par défaut */
+.menu-burger {
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 30px; /* Taille du burger */
-    height: 20px; /* Hauteur totale du burger */
+    gap: 10px;
+    position: relative;
+}
+
+#hamburger-logo {
+    position: fixed;
     cursor: pointer;
+    background: #006d77;
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
 }
 
-.burger-icon img {
-    width: 100%; /* Image occupe toute la largeur disponible */
-    height: auto;
+.mobile-menu {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    background: #14848e;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    overflow: hidden;
+}
+
+.mobile-menu a {
+    color: #ffffff;
+    padding: 10px;
+}
+
+.mobile-menu a:hover {
+    background: #444;
+}
+
+#hamburger:checked~.mobile-menu {
+    position: fixed;
+    display: flex;
+}
+
+#hamburger {
+    position: fixed;
+    display: none;
 }
 
 
-.burger:checked ~ ul {
-    display: flex; /* Affiche le menu */
-}
 
-@media (min-width: 768px) {
+@media screen and (min-width: 1025px) {
     .cv {
         flex-direction: row; /* Sidebar à gauche sur écrans larges */
     }
-    .navbar {
-        justify-content: space-between; /* Espace entre les éléments */
+
+    nav {
+        position: fixed;
+        background-color: #006d77;
+        height: 7vh;
+        width: 100%;
     }
 
-    .burger-icon {
-        display: none; /* Masque l'icône burger */
+    .links {
+        font-size: 1.4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        font-family: "Blinker", sans-serif;
+        font-weight: bold;
     }
 
-    .burger {
-        display: none; /* Masque la checkbox */
+
+
+    .links li a {
+        color: #ffffff;
+        padding: 10px;
     }
 
-    .navbar ul {
-        display: flex; /* Affiche le menu horizontalement */
-        flex-direction: row; /* Disposition horizontale */
-        position: static; /* Position normale dans la barre */
-        width: auto; /* Ajuste la largeur au contenu */
-        gap: 20px; /* Espacement entre les liens */
-    }
-
-    .navbar ul li {
-        text-align: left; /* Alignement normal */
+    .menu-burger {
+        display: none;
     }
 }
+
+
 
 /* Sidebar */
 .sidebar {

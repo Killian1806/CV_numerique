@@ -8,19 +8,23 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <!-- Icône Burger -->
-        <div class="burger">
-            <input type="checkbox" id="burger">
-            <label for="burger" class="burger-icon">
-                <img src="assets/img/nav_burger.png" alt="Menu">
-            </label>
+    <nav>
+        <!-- Création du menu burger pour téléphone et nav pour ordinateur -->
+        <div class="menu-burger">
+            <input type="checkbox" id="hamburger">
+            <label id="hamburger-logo" for="hamburger">☰</label>
+            <nav class="mobile-menu">
+                <!-- renvoie sur la même page à des endroits différents -->
+                <a href="#competences">Compétences</a>
+                <a href="#experiences">Expériences</a>
+                <a href="#formations">Formations</a>
+            </nav>
         </div>
-        <!-- Menu principal -->
         <ul class="links">
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#experiences">Expériences</a></li>
-            <li><a href="#formations">Formations</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#experiences">Expériences</a></li>
+        <li><a href="#formations">Formations</a></li>
+
         </ul>
     </nav>
     
@@ -95,6 +99,7 @@
                         Nous devions le créer en Python avec une partie graphique</p>
                     <p><strong>Dates :</strong> 2023</p>
                 </div>
+                <br>
                 <div class="experience">
                     <h3>Travail</h3>
                     <p><strong>Tâches :</strong> Aide rémunérée</p>
@@ -112,11 +117,13 @@
                     <p><strong>Dates :</strong> 2024 - 2025</p>
                     <p><strong>Compétences acquises :</strong> HTML, CSS, JavaScript, UX/UI design, algorithmie.</p>
                 </div>
+                <br>
                 <div class="education">
                     <h3>Baccalauréat Général</h3>
                     <p><strong>Établissement :</strong> Lycée Jean Calvin</p>
                     <p><strong>Année d'obtention :</strong> 2024</p>
                 </div>
+                <br>
                 <div class="education">
                     <h3>Brevet des collèges</h3>
                     <p><strong>Établissement :</strong> Collège Abel Lefranc</p>
